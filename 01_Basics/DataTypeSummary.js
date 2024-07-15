@@ -34,4 +34,24 @@ const myFunction = function(){
 
 console.log(typeof anotherId);
 
-// https://262.ecma-international.org/5.1/#sec-11.4.3
+
+
+// xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx // xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx //
+
+//Stack(Primitive) , Heap(Non-Primitive)
+
+let myName = "Vineet";
+let myAnotherName = myName;
+myAnotherName = "Chotu";
+console.log(myName);
+console.log(myAnotherName);
+
+
+let user = {
+    Email : "Vineet@gmail.com",
+    Upi : "Vineet@ybl"
+}
+let user2 = user;
+user.Email = "Vineet@email.com";
+console.log(user);
+console.log(user2);
