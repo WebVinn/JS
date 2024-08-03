@@ -49,6 +49,7 @@ function storeNewRate (val1,val2,...rate) {
 console.log(storeNewRate(200,100,300,400,500))
 
 
+//Pass Object in Function() =========>>>
 const user = {
     name : "Vineet",
     price : 199
@@ -56,13 +57,14 @@ const user = {
 function handleObject(anyobject){
     console.log(`Username is ${anyobject.name} and Price is ${anyobject.price}`);
 }
-//handleObject(user);
-handleObject({
-    name : "Vinnie",
-    price : 299
-})
+handleObject(user);
+// handleObject({
+//     name : "Vinnie",
+//     price : 299
+// })
 
 
+//Pass Array in Function() =========>>>
 const tryArray = [100,200,300,400]
 function handleArray (anyarray) {
     return anyarray[3];
