@@ -31,3 +31,5 @@ const myArr = [
 myArr.forEach( (Value) => {
     console.log(Value.name);
 })
+
+//---------------------------------------[NOTE :- forEach does not return.]-----------------------------------------------//
