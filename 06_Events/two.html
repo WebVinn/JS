@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=h1, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>I am a Coder</h1>
+    <button id="stop">Stop</button>
+</body>
+<script>
+    //setTimeout :---
+    const textOne = function () {
+        console.log("Vineet");
+    }
+    const textOneClear = setTimeout(textOne, 5000);
+    clearTimeout(textOneClear)
+
+
+
+    const textTwo = function() {
+        document.querySelector('h1').innerText = "JS Coding"
+    }
+    const textTwoClear = setTimeout(textTwo,5000)
+    // clearTimeout(textTwoClear);
+
+    document.querySelector('#stop').addEventListener('click', function(){
+    clearTimeout(textTwoClear);
+    })
+
+
+    //setIntervel :---
+    const firstText = function(){
+        console.log("Vineet")
+    };
+    const firstTextClear = setInterval(firstText,2000)
+    clearInterval(firstTextClear);
+</script>
+</html>
