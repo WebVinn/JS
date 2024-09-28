@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    //setIntervel :---
+    const firstText = function(){
+        console.log("Vineet")
+    };
+    const firstTextClear = setInterval(firstText,2000)
+    clearInterval(firstTextClear);
+
+
+    const secondText = function(str){
+        console.log(str, Date.now())
+    };
+    const secondTextClear = setInterval(secondText,2000, "VineetCoder")
+    clearInterval(secondTextClear);
+</script>
+</html>
