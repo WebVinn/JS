@@ -93,13 +93,12 @@ getAllUser()
 
 //
 fetch('https://jsonplaceholder.typicode.com/users')
-.then(response){
-    return response.json()
-}
-.then((data){
-    console.log(data);
+.then((responses) => {
+    return responses.json()
 })
-.catch((erro){
-    console.log(error);
-    
+.then((data) => {
+    console.log(data)
+})
+.catch((erro) => {
+    console.log(erro);
 })
