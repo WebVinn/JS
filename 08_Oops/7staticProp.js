@@ -27,3 +27,4 @@ console.log(userTwo);
 userOne.logMe()
 // console.log(userTwo.createId());
 
+//Note : Static does not allow to execute anything.
